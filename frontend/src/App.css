@@ -1,0 +1,72 @@
+.image-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item img {
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.image-item img[loading="lazy"] {
+  opacity: 0;
+}
+
+.image-item img[src] {
+  opacity: 1;
+}
+
+.image-item img.loading {
+  filter: blur(10px);
+  transition: filter 0.5s ease;
+}
+
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item img {
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+.image-item button {
+  margin-top: 10px;
+}
